@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Jul 12 2025 07:21:21 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Jul 12 2025 12:45:16 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="686f54f5dba6c47670a29c03" data-wf-site="68623b1d25dbe443ab1ac854">
 <head>
   <meta charset="utf-8">
@@ -52,33 +52,37 @@
   </section>
   <section class="section">
     <div class="section-wrap fuchsia-background padded-below">
-      <div class="container about-us-herosec">
+      <div class="container about-us-herosec events-news">
         <div class="padding">
           <div class="inner">
-            <div class="events-news-hero-content-wrapper">
-              <div id="w-node-a61f60f3-a6a0-9775-90db-b2aa9a73c697-70a29c03" class="events-news-left-wrapper">
-                <h1 class="secondary-heading white">Events &amp; Announcements</h1>
-                <p class="description white _60">Stay updated with our latest charity events, fundraisers, and important announcements. Join us in making a difference in our community.</p>
-                <div class="homepage-hero-buttons-wrapper">
-                  <a href="#" class="button reduced-spacing w-button">View All Events</a>
-                  <a href="#" class="button reduced-spacing w-button">Subscribe to News</a>
-                </div>
-              </div>
-              <div id="featured-event" class="featured-card-wrapper w-node-_96084c6f-7629-0187-5b98-48638b988a85-70a29c03">
-                <div class="category">Featured Event</div>
-                <h2 class="fe-title"></h2>
-                <p class="fe-description"></p>
-                <div class="featured-event-card-time-date-wrapper">
-                  <div class="event-card-meta-data-wrapper">
-                    <div class="event-icon-wrapper"><img src="images/event-date.png" loading="lazy" alt="" class="event-card-icon"></div>
-                    <div class="fe-date"></div>
-                  </div>
-                  <div class="event-card-meta-data-wrapper">
-                    <div class="event-icon-wrapper"><img src="images/event-time.webp" loading="lazy" alt="" class="event-card-icon"></div>
-                    <div class="fe-time"></div>
+            <div class="event-news-herosection-controld">
+              <div class="events-news-hero-content-wrapper">
+                <div id="w-node-a61f60f3-a6a0-9775-90db-b2aa9a73c697-70a29c03" class="events-news-left-wrapper">
+                  <h1 class="secondary-heading white">Events &amp; Announcements</h1>
+                  <p class="description white _60">Stay updated with our latest charity events, fundraisers, and important announcements. Join us in making a difference in our community.</p>
+                  <div class="homepage-hero-buttons-wrapper">
+                    <a href="#" class="button reduced-spacing w-button">View All Events</a>
+                    <a href="#" class="button reduced-spacing w-button">Subscribe to News</a>
                   </div>
                 </div>
-                <a href="#" class="button w-button">Register Now</a>
+                <div class="featured-card-outer">
+                  <div id="featured-event" class="featured-card-wrapper w-node-_96084c6f-7629-0187-5b98-48638b988a85-70a29c03">
+                    <div class="category">Featured Event</div>
+                    <h2 class="fe-title"></h2>
+                    <p class="fe-description"></p>
+                    <div class="featured-event-card-time-date-wrapper">
+                      <div class="event-card-meta-data-wrapper">
+                        <div class="event-icon-wrapper"><img src="images/event-date.png" loading="lazy" alt="" class="event-card-icon"></div>
+                        <div class="fe-date"></div>
+                      </div>
+                      <div class="event-card-meta-data-wrapper">
+                        <div class="event-icon-wrapper"><img src="images/event-time.webp" loading="lazy" alt="" class="event-card-icon"></div>
+                        <div class="fe-time"></div>
+                      </div>
+                    </div>
+                    <a href="#" class="button w-button">Register Now</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -253,7 +257,7 @@
   // Marking featured Event
   window.events = window.events.map(e => ({
     ...e,
-    featured: e.id === 2 // You can change the condition
+    featured: e.id === 3 // You can change the condition
   }));
   const featured = window.events.find(e => e.featured);
   if (featured) {
